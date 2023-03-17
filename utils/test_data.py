@@ -4,7 +4,7 @@ class Data:
 
     test_username = 'username'
 
-    signup_email = 'i5cavr@gmai.com'
+    signup_email = 'i545cavr@gmai.com'
 
     Mr = 'gender1'
 
