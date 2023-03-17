@@ -20,7 +20,6 @@ class TestCases:
     @pytest.fixture
     def test_setup(self, new_page):
         self.page = new_page
-        #self.page.set_viewport_size(viewport_size={'width': 1460, 'height': 600})
         self.login = Login(self.page)
         self.main = Main(self.page)
         self.signup = SignUp(self.page)
@@ -32,8 +31,6 @@ class TestCases:
         self.product_details = ProductDetails(self.page)
         self.checkout = Checkout(self.page)
         self.payment = Payment(self.page)
-
-        #self.page.goto(f'http://automationexercise.com/')
 
     def test_first(self, test_setup):
         self.main.check_page_is_visible()
